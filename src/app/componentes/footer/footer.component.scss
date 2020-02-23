@@ -1,0 +1,41 @@
+@import "../../../assets/scss/mixins";
+@import "../../../assets/scss/placeholder";
+
+a{
+    text-decoration: none;
+}
+
+.slider{
+    @include div(100%, 100%, #2CA05A, auto, none);
+}
+
+// imagem do slide
+
+.img-slide{
+    @extend %centralizar;
+    padding: 20px;
+}
+
+// footer
+
+.footer{
+    @include div(100%, none, rgb(59, 119, 59), none, transparent);
+}
+
+.sub-title{
+    padding: 10px;
+    color: white;
+}
+
+.links{
+    margin: {
+        left: 10px;
+        top: 20px;
+    };
+    padding: 10px;
+    color: rgb(221, 219, 219);
+
+    &:hover{
+        color: rgb(155, 155, 243);
+    }
+}

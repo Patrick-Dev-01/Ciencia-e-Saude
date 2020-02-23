@@ -1,0 +1,35 @@
+<div class="corpo">
+    <div class="conteudo"><br>
+        <div *ngIf="resultados == true">
+            <h1 class="title">Confira agora algumas receitas para iniciar sua vida Saudável</h1>
+            <div class="receita" *ngFor="let receita of receitas">
+                <img src="../../../assets/img/receitas/{{ receita.image }}" alt="" class="img-receita">
+                <h2 class="nome-receita">{{ receita.nome }}</h2>
+
+                <!-- Ingredientes necessarios -->
+                <div class="ingredientes">
+                    <h3>Ingredientes</h3>
+                    <img src="../../../assets/img/icones/Ingredients_icon.png" class="icon">
+                    <ul class="lista" *ngFor="let i of receita.ingredientes">
+                        <li class="list">{{ i }}</li>
+                    </ul>
+                </div><br>
+
+                <!-- Modo de preparo -->
+                <div class="preparo">
+                    <h3>Modo de Preparo</h3>
+                    <ul class="lista" *ngFor="let p of receita.preparo">
+                        <li class="list">{{ p }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Se a pagina não pegou as receitas pela API-->
+        <div class="no-results">
+            <p class="text">As Receitas dessa pagina são carregadas via API, verifique o arquivo
+            "Leia.MD" para mais instruções</p>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

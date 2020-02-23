@@ -1,0 +1,35 @@
+@import "../../../../assets/scss/mixins";
+@import "../../../../assets/scss/placeholder";
+
+
+// tabela de sugestões
+
+#refeicoes{
+    width: 700px;
+    height: 100px;
+    margin: auto;
+    border-spacing: 0px;
+    border: 1px solid black;
+}
+
+.refer{
+    text-align: center;
+}
+
+td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.refeicao{
+    width: 150px;
+    text-align: center;
+}
+
+.sugestao{
+    text-align: justify;
+}
+
+.par{
+    background-color: rgb(236, 236, 236);
+}

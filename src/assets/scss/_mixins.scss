@@ -1,0 +1,22 @@
+@mixin div($width, $height, $background-color, $margin, $border){
+    width: $width;
+    height: $height;
+    background-color: $background-color;
+    margin: $margin;
+    border: $border;
+}
+
+@mixin button($width, $height, $background-color, $color, $border, $cursor) {
+    width: $width;
+    height: $height;
+    background-color: $background-color;
+    color: $color;
+    border: $border;
+    cursor: $cursor;
+}
+
+@mixin image($width, $height, $border){
+    width: $width;
+    height: $height;
+    border: $border;
+}

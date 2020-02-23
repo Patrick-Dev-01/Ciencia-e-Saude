@@ -1,0 +1,53 @@
+%title{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+%sub-title{
+    margin: {
+        top: 20px;
+        bottom: 20px;
+        left: 10px;
+    };
+}
+
+%text{
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    padding: 10px;
+    margin: {
+        top: 5px;
+    };
+    text-indent: 15px;
+    font: {
+        size: 14pt;
+    };
+}
+
+%mini-text{
+    margin: {
+        top: 15px;
+        left: 10px;
+    };
+    text-align: justify;
+    font: {
+        size: 14pt;
+    };
+    padding: 10px;
+}
+
+%centralizar{
+    margin: {
+        left: auto;
+        right: auto;
+    };
+    display: block;
+}
+
+%receita{
+    padding: 10px;
+    margin: {
+        bottom: 5px;
+    };
+    color: white;
+}

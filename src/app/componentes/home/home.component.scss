@@ -1,0 +1,59 @@
+@import "../../../assets/scss/mixins";
+@import "../../../assets/scss/placeholder";
+
+.corpo{
+    background-color: white;
+    border: 5px solid #2CA05A;
+    border-top: 1px solid black;
+}
+
+.conteudo{
+    @include div(95%, none, white, auto, none);
+    box-shadow: 1px 4px 4px 1px rgb(219, 219, 219);
+    margin: {
+        bottom: 15px;
+    };
+}
+
+// imagens 
+
+.img-alimentacao{
+    @include image(400px, 300px, none);
+    @extend %centralizar;
+}
+
+#piramide{
+    @include image(550px, 400px, 1px solid rgb(211, 209, 209));
+    @extend %centralizar;
+}
+
+// conteudo
+
+.title{
+    @extend %title;
+    margin: {
+        bottom: 20px;
+    };
+}
+
+.sub-title{
+    @extend %sub-title;
+}
+
+.texto{
+    @extend %text;
+}
+
+// nutrientes
+
+.nutrientes{
+    margin: {
+        top: 20px;
+        left: 20px;
+    };
+}
+
+.nutrientes-text{
+    @extend %mini-text;
+}
+

@@ -1,0 +1,55 @@
+@import "../../../assets/scss/mixins";
+@import "../../../assets/scss/placeholder";
+
+.corpo{
+    background-color: white;
+    border: 5px solid #2CA05A;
+    border-top: 1px solid black;
+}
+
+.conteudo{
+    @include div(95%, none, white, auto, none);
+    box-shadow: 1px 4px 4px 1px rgb(219, 219, 219);
+    margin: {
+        bottom: 15px;
+    };
+}
+
+// Ciência
+
+.title{
+    @extend %title;
+    margin: {
+        bottom: 40px;
+    };
+}
+
+.sub-title{
+    @extend %sub-title;
+    margin: {
+        left: 10px;
+    };
+    color: rgb(68, 68, 68);
+}
+
+.img-ciencia{
+    @extend %centralizar;
+    @include image(500px, 350px, none);
+}
+
+.texto{
+    @extend %text;
+}
+
+// atividade fisica
+
+.treino{
+    margin: {
+        top: 15px;
+        left: 20px;
+    };
+}
+
+.treino-text{
+    @extend %mini-text;
+}

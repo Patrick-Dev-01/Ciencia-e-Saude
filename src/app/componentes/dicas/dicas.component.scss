@@ -1,0 +1,77 @@
+@import "../../../assets/scss/mixins";
+@import "../../../assets/scss/placeholder";
+
+
+.corpo{
+    background-color: white;
+    border: 5px solid #2CA05A;
+    border-top: 1px solid black;
+}
+
+.conteudo{
+    @include div(95%, none, white, auto, none);
+    box-shadow: 1px 4px 4px 1px rgb(219, 219, 219);
+    margin: {
+        bottom: 15px;
+    };
+}
+
+.title{
+    @extend %title;
+}
+
+// imagens
+
+.img-dicas{
+    @extend %centralizar;
+    @include image(500px, 350px, none);
+    margin: {
+        top: 10px;
+    };
+    padding: 5px;
+}
+
+.sub-title{
+    @extend %sub-title;
+}
+
+.texto{
+    @extend %text;
+}
+
+// dicas
+
+.dica{
+    margin: {
+        top: 15px;
+        left: 20px;
+    };
+}
+
+.dica-text{
+   @extend %mini-text;
+}
+
+// alimentos evitados
+
+.sub-dica{
+    margin: {
+        left: 50px;
+        top: 5px;
+    };
+}
+
+#lista-evitar{
+    display: inline-block;
+    margin: {
+        bottom: 20px;
+    };
+
+    .alimentos{
+        margin: {
+            left: 100px;
+            top: 10px;
+        };
+        padding: 5px;
+    }
+}
